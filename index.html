@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/index.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class='container'>
+            <div id="main-title" class="hide"> 
+                <h1>Linear Regression Demo.</h1>
+                <h4>Click on the black box to start adding data points</h4>
+                <div>
+                    <button id="reset" class="hide">Reset</button>
+                    <h2>Stats</h2>
+                    <h5>Coefficient : <span id="coeff"></span></h5>
+                    <h5>Bias : <span id="bias"></span></h5>
+                </div>
+            </div>
+            <div id="linreg">
+                <div id="screen-info" ><h2>Click to start Linear Regression</h2></div>
+                <canvas id='graph' style="background: black;" width='600' height='600'></canvas>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+        <script src="tf_lr.js" async defer></script>
+    </body>
+</html>
